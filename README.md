@@ -3,7 +3,7 @@
 # 2021
 ## May
 
-- [-] [Design Microservice Architectures the Right Way](https://www.youtube.com/watch?v=j6ow-UemzBc)
+- [x] [Design Microservice Architectures the Right Way](https://www.youtube.com/watch?v=j6ow-UemzBc)
 - [ ] [Modular Monolith vs Microservices](https://www.cmsdrupal.com/blog/modular-monolith-vs-microservices-how-do-you-make-choice)
 - [ ] [Modular Monolith Or Microservices?](https://mozaicworks.com/blog/modular-monolith-microservices/)
 - [ ] [Don’t start with a monolith… when your goal is a microservices architecture](https://martinfowler.com/articles/dont-start-monolith.html)
