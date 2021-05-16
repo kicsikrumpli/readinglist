@@ -13,6 +13,7 @@ Microservices, Monoliths:
 
 Patterns:
 - [x] [CQRS](https://martinfowler.com/bliki/CQRS.html)
+- [ ] [CQRS Journey](https://docs.microsoft.com/en-us/previous-versions/msp-n-p/jj554200(v=pandp.10))
 
 Documentation:
 - [ ] [The C4 Model for Software Architecture](https://www.infoq.com/articles/C4-architecture-model/)
