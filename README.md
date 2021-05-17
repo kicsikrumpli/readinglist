@@ -12,6 +12,8 @@ SOA, Microservices, Monoliths:
 - [ ] [Microservices Guide](https://martinfowler.com/microservices/)
 - [ ] [What is a monolith](http://www.codingthearchitecture.com/2014/11/19/what_is_a_monolith.html)
 - [ ] [SOA vs. Microservices](https://www.ibm.com/cloud/blog/soa-vs-microservices)
+- [x] [Developing Microservices with Aggregates](https://www.youtube.com/watch?v=7kX3fs0pWwc)
+- [x] [All Our Aggregates Are Wrong](https://www.youtube.com/watch?v=KkzvQSuYd5I)
 
 Architecture Patterns:
 - [x] [Architectural Styles vs. Patterns](https://herbertograca.com/2017/07/28/architectural-styles-vs-architectural-patterns-vs-design-patterns/)
@@ -39,4 +41,3 @@ Documentation:
 
 and the rest:
 - [x] [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
-- [x] [All Our Aggregates Are Wrong](https://www.youtube.com/watch?v=KkzvQSuYd5I)
