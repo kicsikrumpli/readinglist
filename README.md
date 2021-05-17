@@ -39,3 +39,4 @@ Documentation:
 
 and the rest:
 - [x] [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
+- [x] [All Our Aggregates Are Wrong](https://www.youtube.com/watch?v=KkzvQSuYd5I)
