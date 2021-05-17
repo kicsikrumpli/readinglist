@@ -12,7 +12,6 @@ SOA, Microservices, Monoliths:
 - [ ] [Microservices Guide](https://martinfowler.com/microservices/)
 - [ ] [What is a monolith](http://www.codingthearchitecture.com/2014/11/19/what_is_a_monolith.html)
 - [ ] [SOA vs. Microservices](https://www.ibm.com/cloud/blog/soa-vs-microservices)
-- [ ] 
 
 Architecture Patterns:
 - [x] [Architectural Styles vs. Patterns](https://herbertograca.com/2017/07/28/architectural-styles-vs-architectural-patterns-vs-design-patterns/)
@@ -25,7 +24,6 @@ Architecture Patterns:
 
 Relase Patterns:
 - [x] [Blue-Green Deployment](https://martinfowler.com/bliki/BlueGreenDeployment.html)
-- [ ] 
 
 Integration Patterns:
 - [x] [Request–Reply](https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html)
@@ -34,7 +32,6 @@ Integration Patterns:
 - [x] [Guaranteed Delivery](https://www.enterpriseintegrationpatterns.com/patterns/messaging/GuaranteedMessaging.html)
 - [x] [Content Enricher](https://www.enterpriseintegrationpatterns.com/patterns/messaging/DataEnricher.html)
 - [x] [Aggregator](https://www.enterpriseintegrationpatterns.com/patterns/messaging/Aggregator.html)
-- [ ] 
 
 Documentation:
 - [ ] [The C4 Model for Software Architecture](https://www.infoq.com/articles/C4-architecture-model/)
@@ -42,4 +39,3 @@ Documentation:
 
 and the rest:
 - [x] [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
-- [ ] 
