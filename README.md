@@ -38,6 +38,7 @@ Integration Patterns:
 Documentation:
 - [ ] [The C4 Model for Software Architecture](https://www.infoq.com/articles/C4-architecture-model/)
 - [ ] [The C4 model for visualising software architecture](https://c4model.com)
+- [x] [Visualising software architecture with the C4 model](https://www.youtube.com/watch?v=x2-rSnhpw0g)
 
 and the rest:
 - [x] [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
