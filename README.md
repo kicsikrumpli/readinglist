@@ -42,3 +42,6 @@ Documentation:
 
 and the rest:
 - [x] [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
+
+for funk's sake:
+- [x] [jira on jira](https://jira.atlassian.com/browse/CONFSERVER-22996)
