@@ -5,6 +5,7 @@
 
 - [ ] [(SEI) ADD 3.0: Rethinking Drivers and Decisions in the Design Process](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=436536)
 - [ ] [NASA WBS Handbook](https://explorers.larc.nasa.gov/HPMIDEX/pdf_files/08_[NASA_WBS_Handbook_]20180000844.pdf)
+- [ ] [Cloud Desgn Patterns](http://en.clouddesignpattern.org/index.php/Main_Page)
 
 
 ## May
