@@ -8,6 +8,10 @@
 - [ ] [Cloud Desgn Patterns](http://en.clouddesignpattern.org/index.php/Main_Page)
 - [ ] [Azure Architecture Blueprints](https://docs.microsoft.com/en-us/azure/architecture/browse/)
 
+NoSQL
+- [x] [CAP theorem – IBM Cloud Education](https://www.ibm.com/cloud/learn/cap-theorem)
+- [x] [Brewer's CAP Theorem](https://www.julianbrowne.com/article/brewers-cap-theorem)
+
 
 ## May
 
