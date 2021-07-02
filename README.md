@@ -11,10 +11,11 @@
 NoSQL
 - [x] [CAP theorem – IBM Cloud Education](https://www.ibm.com/cloud/learn/cap-theorem)
 - [x] [Brewer's CAP Theorem](https://www.julianbrowne.com/article/brewers-cap-theorem)
-- [x] [2x2x2 Requirements for Database Scalability](http://cattell.net/datastores/ScalabilityRequirements.html) Flo
+- [x] [2x2x2 Requirements for Database Scalability](http://cattell.net/datastores/ScalabilityRequirements.html)
 
 ML
 - [ ] [Google ML Course w/ Tensorflow](https://developers.google.com/machine-learning/crash-course/ml-intro)
+- [ ] [Stat Quest – Neural Networks](https://www.youtube.com/playlist?list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1)
 
 
 ## May
