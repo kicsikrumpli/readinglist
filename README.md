@@ -1,6 +1,10 @@
 # readinglist
 
 # 2021
+## July
+
+- [ ] ...
+
 ## June
 
 - [ ] [(SEI) ADD 3.0: Rethinking Drivers and Decisions in the Design Process](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=436536)
