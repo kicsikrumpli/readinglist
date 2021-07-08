@@ -3,7 +3,8 @@
 # 2021
 ## July
 
-- [ ] ...
+- [x] [Big Modular Java with Guice](https://www.youtube.com/watch?v=hBVJbzAagfs)
+- [ ] 
 
 ## June
 
