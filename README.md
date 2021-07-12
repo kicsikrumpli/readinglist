@@ -4,6 +4,7 @@
 ## July
 
 - [x] [Big Modular Java with Guice](https://www.youtube.com/watch?v=hBVJbzAagfs)
+- [x] [Undifferentiated Heavy Lifting](https://aws.amazon.com/blogs/aws/we_build_muck_s/)
 - [ ] 
 
 ## June
