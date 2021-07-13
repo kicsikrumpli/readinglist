@@ -5,7 +5,7 @@
 
 - [x] [Big Modular Java with Guice](https://www.youtube.com/watch?v=hBVJbzAagfs)
 - [x] [Undifferentiated Heavy Lifting](https://aws.amazon.com/blogs/aws/we_build_muck_s/)
-- [ ] 
+- [x] [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/)
 
 ## June
 
