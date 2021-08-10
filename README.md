@@ -1,6 +1,13 @@
 # readinglist
 
 # 2021
+## Aug
+
+`__pypackages__` instead of venvs
+- [x] [pdm python package manager](https://github.com/pdm-project/pdm)
+- [x] [pyflow python package manager](https://github.com/David-OConnor/pyflow)
+- [x] [PEP 582 -- Python local packages directory](https://www.python.org/dev/peps/pep-0582/)
+
 ## July
 
 - [x] [Big Modular Java with Guice](https://www.youtube.com/watch?v=hBVJbzAagfs)
