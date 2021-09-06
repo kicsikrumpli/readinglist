@@ -4,11 +4,14 @@
 ## Sep
 Multi-Tenant SaaS
 
+- [X] [AWS re:Invent 2018: Deconstructing SaaS: Building Multi-Tenant Solutions on AWS (ARC418-R1)](https://www.youtube.com/watch?v=mwQ5lipGTBI)
+- [X] [AWS re:Invent 2019: SaaS tenant isolation patterns (ARC372-P)](https://www.youtube.com/watch?v=fuDZq-EspNA)
+- [ ] [SaaS Tenant Isolation Strategies](https://d1.awsstatic.com/whitepapers/saas-tenant-isolation-strategies.pdf?CID=saas-factory:sf:whitepaper:biz-tech)
+
 - [ ] [Building a Multi-Tenant SaaS Solution Using Amazon EKS](https://aws.amazon.com/blogs/apn/building-a-multi-tenant-saas-solution-using-amazon-eks/) 
 - [ ] [Tenant Isolation](https://aws.amazon.com/partners/programs/saas-factory/tenant-isolation/)
 - [ ] [In-Depth Strategies for Building a Scalable, Multi-Tenant SaaS Solution with Amazon Redshift](https://aws.amazon.com/blogs/apn/in-depth-strategies-for-building-a-scalable-multi-tenant-saas-solution-with-amazon-redshift/)
-- [ ] [AWS re:Invent 2018: Deconstructing SaaS: Building Multi-Tenant Solutions on AWS (ARC418-R1)](https://www.youtube.com/watch?v=mwQ5lipGTBI)
-- [ ] [Multi tenant Architecture for a SaaS Application on AWS](https://www.clickittech.com/saas/multi-tenant-architecture/)
+ [ ] [Multi tenant Architecture for a SaaS Application on AWS](https://www.clickittech.com/saas/multi-tenant-architecture/)
 - [ ] [Building a Multi-tenant Enterprise SaaS Application on AWS](https://frontegg.com/blog/building-a-multi-tenant-enterprise-saas-application-on-aws)
 - [ ] [SaaS Storage Strategies](https://d1.awsstatic.com/whitepapers/security-practices-for-multi-tenant-saas-apps-using-eks.pdf)
 - [ ] [Security Practices for Multi- Tenant SaaS Applications using Amazon EKS](https://d1.awsstatic.com/whitepapers/security-practices-for-multi-tenant-saas-apps-using-eks.pdf)
