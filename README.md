@@ -1,6 +1,19 @@
 # readinglist
 
 # 2021
+## Sep
+Multi-Tenant SaaS
+
+- [ ] [Building a Multi-Tenant SaaS Solution Using Amazon EKS](https://aws.amazon.com/blogs/apn/building-a-multi-tenant-saas-solution-using-amazon-eks/) 
+- [ ] [Tenant Isolation](https://aws.amazon.com/partners/programs/saas-factory/tenant-isolation/)
+- [ ] [In-Depth Strategies for Building a Scalable, Multi-Tenant SaaS Solution with Amazon Redshift](https://aws.amazon.com/blogs/apn/in-depth-strategies-for-building-a-scalable-multi-tenant-saas-solution-with-amazon-redshift/)
+- [ ] [AWS re:Invent 2018: Deconstructing SaaS: Building Multi-Tenant Solutions on AWS (ARC418-R1)](https://www.youtube.com/watch?v=mwQ5lipGTBI)
+- [ ] [Multi tenant Architecture for a SaaS Application on AWS](https://www.clickittech.com/saas/multi-tenant-architecture/)
+- [ ] [Building a Multi-tenant Enterprise SaaS Application on AWS](https://frontegg.com/blog/building-a-multi-tenant-enterprise-saas-application-on-aws)
+- [ ] [SaaS Storage Strategies](https://d1.awsstatic.com/whitepapers/security-practices-for-multi-tenant-saas-apps-using-eks.pdf)
+- [ ] [Security Practices for Multi- Tenant SaaS Applications using Amazon EKS](https://d1.awsstatic.com/whitepapers/security-practices-for-multi-tenant-saas-apps-using-eks.pdf)
+- [ ] [Architectural design patterns for multi-tenancy on AWS](https://www.nagarro.com/en/blog/architectural-design-patterns-aws-multi-tenancy)
+
 ## Aug
 
 `__pypackages__` instead of venvs
