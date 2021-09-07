@@ -11,17 +11,9 @@ Multi-Tenant SaaS
 - [X] [Isolating SaaS Tenants with Dynamically Generated IAM Policies](https://aws.amazon.com/blogs/apn/isolating-saas-tenants-with-dynamically-generated-iam-policies/)
 - [X] [https://aws.amazon.com/blogs/apn/applying-dynamically-generated-isolation-policies-in-saas-environments/](https://aws.amazon.com/blogs/apn/applying-dynamically-generated-isolation-policies-in-saas-environments/)
 - [X] [Building a Multi-Tenant SaaS Solution Using AWS Serverless Services](https://aws.amazon.com/blogs/apn/building-a-multi-tenant-saas-solution-using-aws-serverless-services/)
-- [ ] [SaaS Tenant Isolation Strategies](https://d1.awsstatic.com/whitepapers/saas-tenant-isolation-strategies.pdf?CID=saas-factory:sf:whitepaper:biz-tech)
-- [ ] [SaaS Storage Strategies](https://d0.awsstatic.com/whitepapers/Multi_Tenant_SaaS_Storage_Strategies.pdf?CID=saas-factory:sf:whitepaper:tech)
-
-- [ ] [Building a Multi-Tenant SaaS Solution Using Amazon EKS](https://aws.amazon.com/blogs/apn/building-a-multi-tenant-saas-solution-using-amazon-eks/) 
-- [ ] [Tenant Isolation](https://aws.amazon.com/partners/programs/saas-factory/tenant-isolation/)
-- [ ] [In-Depth Strategies for Building a Scalable, Multi-Tenant SaaS Solution with Amazon Redshift](https://aws.amazon.com/blogs/apn/in-depth-strategies-for-building-a-scalable-multi-tenant-saas-solution-with-amazon-redshift/)
- [ ] [Multi tenant Architecture for a SaaS Application on AWS](https://www.clickittech.com/saas/multi-tenant-architecture/)
-- [ ] [Building a Multi-tenant Enterprise SaaS Application on AWS](https://frontegg.com/blog/building-a-multi-tenant-enterprise-saas-application-on-aws)
-- [ ] [SaaS Storage Strategies](https://d1.awsstatic.com/whitepapers/security-practices-for-multi-tenant-saas-apps-using-eks.pdf)
-- [ ] [Security Practices for Multi- Tenant SaaS Applications using Amazon EKS](https://d1.awsstatic.com/whitepapers/security-practices-for-multi-tenant-saas-apps-using-eks.pdf)
-- [ ] [Architectural design patterns for multi-tenancy on AWS](https://www.nagarro.com/en/blog/architectural-design-patterns-aws-multi-tenancy)
+- [X] [SaaS Tenant Isolation Strategies](https://d1.awsstatic.com/whitepapers/saas-tenant-isolation-strategies.pdf?CID=saas-factory:sf:whitepaper:biz-tech)
+- [X] [SaaS Storage Strategies](https://d0.awsstatic.com/whitepapers/Multi_Tenant_SaaS_Storage_Strategies.pdf?CID=saas-factory:sf:whitepaper:tech)
+- [X] [Tenant Isolation](https://aws.amazon.com/partners/programs/saas-factory/tenant-isolation/)
 
 ## Aug
 
