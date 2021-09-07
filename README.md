@@ -6,6 +6,7 @@ Multi-Tenant SaaS
 
 - [X] [AWS re:Invent 2018: Deconstructing SaaS: Building Multi-Tenant Solutions on AWS (ARC418-R1)](https://www.youtube.com/watch?v=mwQ5lipGTBI)
 - [X] [AWS re:Invent 2019: SaaS tenant isolation patterns (ARC372-P)](https://www.youtube.com/watch?v=fuDZq-EspNA)
+- [X] [AWS re:Invent 2017: GPS: SaaS and OpenID Connect: The Secret Sauce of Multitenant Id (GPSTEC323)](https://www.youtube.com/watch?v=jnFZGX2_T9U)
 - [ ] [SaaS Tenant Isolation Strategies](https://d1.awsstatic.com/whitepapers/saas-tenant-isolation-strategies.pdf?CID=saas-factory:sf:whitepaper:biz-tech)
 - [ ] [SaaS Storage Strategies](https://d0.awsstatic.com/whitepapers/Multi_Tenant_SaaS_Storage_Strategies.pdf?CID=saas-factory:sf:whitepaper:tech)
 
