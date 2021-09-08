@@ -2,6 +2,10 @@
 
 # 2021
 ## Sep
+Video on Demand on Aws
+
+- [X] [Video on Demand on AWS Foundation Solutions Implementation architecture](https://aws.amazon.com/solutions/implementations/video-on-demand-on-aws/)
+
 Multi-Tenant SaaS
 
 - [X] [AWS re:Invent 2018: Deconstructing SaaS: Building Multi-Tenant Solutions on AWS (ARC418-R1)](https://www.youtube.com/watch?v=mwQ5lipGTBI)
