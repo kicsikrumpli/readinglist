@@ -2,6 +2,12 @@
 
 # 2021
 ## Sep
+Docker without Doecker Desktop
+
+- [X] [Run Docker without Docker Desktop on macOS](https://dhwaneetbhatt.com/blog/run-docker-without-docker-desktop-on-macos)
+- [X] [An Overview of Docker Desktop Alternatives](https://matt-rickard.com/docker-desktop-alternatives/)
+- [X] [Replacing Docker Desktop with hyperkit + minikube](https://arnon.me/2021/09/replace-docker-with-minikube/)
+
 Video on Demand on Aws
 
 - [X] [Video on Demand on AWS Foundation Solutions Implementation architecture](https://aws.amazon.com/solutions/implementations/video-on-demand-on-aws/)
