@@ -2,7 +2,11 @@
 
 # 2021
 ## Sep
-Docker without Doecker Desktop
+Octoprint
+
+- [X] [apt install octoprint](https://community.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspbian-or-raspberry-pi-os/2337/7)
+
+Docker without Docker Desktop
 
 - [X] [Run Docker without Docker Desktop on macOS](https://dhwaneetbhatt.com/blog/run-docker-without-docker-desktop-on-macos)
 - [X] [An Overview of Docker Desktop Alternatives](https://matt-rickard.com/docker-desktop-alternatives/)
