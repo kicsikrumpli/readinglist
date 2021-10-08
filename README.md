@@ -1,6 +1,13 @@
 # readinglist
 
 # 2021
+## Oct
+MLFlow
+- [X] [Kubeflow vs. MLFlow](https://servian.dev/the-cheesy-analogy-of-mlflow-and-kubeflow-715a45580fbe)
+- [X] [A Comprehensive Comparison Between Kubeflow and MLflow](https://valohai.com/blog/kubeflow-vs-mlflow/)
+- [ ] [ML Ops](https://ml-ops.org)
+
+
 ## Sep
 Octoprint
 
