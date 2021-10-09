@@ -2,12 +2,12 @@
 
 # 2021
 ## Oct
-MLFlow
+ML Ops
 - [X] [Kubeflow vs. MLFlow](https://servian.dev/the-cheesy-analogy-of-mlflow-and-kubeflow-715a45580fbe)
 - [X] [A Comprehensive Comparison Between Kubeflow and MLflow](https://valohai.com/blog/kubeflow-vs-mlflow/)
 - [ ] [ML Ops](https://ml-ops.org)
 - [X] [Using MLOps with MLflow and Azure](https://databricks.com/blog/2020/10/13/using-mlops-with-mlflow-and-azure.html)
-- 
+- [ ] [Deploy Ml models into production](https://youtu.be/-UYyyeYJAoQ)
 
 
 ## Sep
