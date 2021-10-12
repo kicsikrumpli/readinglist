@@ -9,6 +9,9 @@ ML Ops
 - [X] [Using MLOps with MLflow and Azure](https://databricks.com/blog/2020/10/13/using-mlops-with-mlflow-and-azure.html)
 - [ ] [Deploy Ml models into production](https://youtu.be/-UYyyeYJAoQ)
 
+Homebrew
+- [X] [Extract older version of homebrew formula](https://stackoverflow.com/questions/62785290/installing-previous-versions-of-a-formula-with-brew-extract)
+
 ## Sep
 Octoprint
 
