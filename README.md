@@ -9,6 +9,8 @@ ML Ops
 - [X] [Using MLOps with MLflow and Azure](https://databricks.com/blog/2020/10/13/using-mlops-with-mlflow-and-azure.html)
 - [ ] [Deploy Ml models into production](https://youtu.be/-UYyyeYJAoQ)
 
+Tensorflow
+- [ ] [Install Tensorflow on M1 Mac](https://github.com/apple/tensorflow_macos/issues/153)
 
 ## Sep
 Octoprint
