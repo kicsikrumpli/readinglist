@@ -12,6 +12,9 @@ ML Ops
 Homebrew
 - [X] [Extract older version of homebrew formula](https://stackoverflow.com/questions/62785290/installing-previous-versions-of-a-formula-with-brew-extract)
 
+Misc
+- [X] [How APT does its fancy progress bar](https://mdk.fr/blog/how-apt-does-its-fancy-progress-bar.html)
+
 ## Sep
 Octoprint
 
