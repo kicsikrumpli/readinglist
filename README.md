@@ -14,7 +14,8 @@ Homebrew
 
 Misc
 - [X] [How APT does its fancy progress bar](https://mdk.fr/blog/how-apt-does-its-fancy-progress-bar.html)
-- [ ] [FFmpeg – the swiss army knife of Internet Streaming – part I](https://sonnati.wordpress.com/2011/07/11/ffmpeg-the-swiss-army-knife-of-internet-streaming-part-i/)
+- [X] [FFmpeg – the swiss army knife of Internet Streaming – part I](https://sonnati.wordpress.com/2011/07/11/ffmpeg-the-swiss-army-knife-of-internet-streaming-part-i/)
+- [X] [How to Use the NGINX RTMP Module to Setup a Streaming Server](https://www.servermania.com/kb/articles/nginx-rtmp/)
 
 ## Sep
 Octoprint
