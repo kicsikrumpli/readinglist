@@ -15,7 +15,11 @@ Homebrew
 Misc
 - [X] [How APT does its fancy progress bar](https://mdk.fr/blog/how-apt-does-its-fancy-progress-bar.html)
 - [X] [FFmpeg – the swiss army knife of Internet Streaming – part I](https://sonnati.wordpress.com/2011/07/11/ffmpeg-the-swiss-army-knife-of-internet-streaming-part-i/)
-- [X] [How to Use the NGINX RTMP Module to Setup a Streaming Server](https://www.servermania.com/kb/articles/nginx-rtmp/)
+- [X] [nginx-rtmp tutorial](https://github.com/sergey-dryabzhinsky/nginx-rtmp-module/blob/dev/doc/tutorial.md)
+- [ ] [Getting started with nginx rtmp](https://github.com/arut/nginx-rtmp-module/wiki/Getting-started-with-nginx-rtmp)
+- [ ] [ffmpeg streaming guide](https://trac.ffmpeg.org/wiki/StreamingGuide)
+- [X] [HLS Streaming Server with NGINX](https://www.youtube.com/watch?v=Y-9kVF6bWr4&t=731s)
+- [ ] [Setting up HLS live streaming server using NGINX + nginx-rtmp-module on Ubuntu](https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/)
 
 ## Sep
 Octoprint
