@@ -1,6 +1,13 @@
 # readinglist
 
 # 2021
+## Nov
+RabbitMq
+- [X] [RabbitMQ vs. Kafka](https://stiller.blog/2020/02/rabbitmq-vs-kafka-an-architects-dilemma-part-2/)
+- [X] [How to Close All RabbitMQ Connections](https://www.cloudamqp.com/blog/how-to-close-all-connections-rabbitmq.html)
+- [X] [RabbitMQ Federation Plugin](https://www.rabbitmq.com/federation.html)
+
+
 ## Oct
 ML Ops
 - [X] [Kubeflow vs. MLFlow](https://servian.dev/the-cheesy-analogy-of-mlflow-and-kubeflow-715a45580fbe)
