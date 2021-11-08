@@ -26,7 +26,7 @@ Misc
 - [ ] [Getting started with nginx rtmp](https://github.com/arut/nginx-rtmp-module/wiki/Getting-started-with-nginx-rtmp)
 - [ ] [ffmpeg streaming guide](https://trac.ffmpeg.org/wiki/StreamingGuide)
 - [X] [HLS Streaming Server with NGINX](https://www.youtube.com/watch?v=Y-9kVF6bWr4&t=731s)
-- [ ] [Setting up HLS live streaming server using NGINX + nginx-rtmp-module on Ubuntu](https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/)
+- [X] [Setting up HLS live streaming server using NGINX + nginx-rtmp-module on Ubuntu](https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/)
 
 ## Sep
 Octoprint
