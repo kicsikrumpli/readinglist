@@ -2,6 +2,10 @@
 
 # 2021
 ## Nov
+Serverless
+- [X] [package python code for aws lambda with serverless](https://www.serverless.com/plugins/serverless-python-requirements)
+
+
 RabbitMq
 - [X] [RabbitMQ vs. Kafka](https://stiller.blog/2020/02/rabbitmq-vs-kafka-an-architects-dilemma-part-2/)
 - [X] [How to Close All RabbitMQ Connections](https://www.cloudamqp.com/blog/how-to-close-all-connections-rabbitmq.html)
