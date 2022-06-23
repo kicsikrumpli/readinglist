@@ -1,0 +1,46 @@
+= Adoc How-to
+
+== Install 
+
+[source, bash]
+----
+brew install asciidoctor # <1>
+gem install asciidoctor-diagram # <2>
+# install java # <3>
+----
+<1> or `gem install asciidoctor`
+<2> no homebrew formula for diagram extension
+<3> diagram generation requires java – sdkman?
+
+== Make a diagram
+
+https://docs.asciidoctor.org/diagram-extension/latest/[diagram sample source]
+
+.sample diagram
+----
+[ditaa]
+....
+                   +-------------+
+                   | Asciidoctor |-------+
+                   |   diagram   |       |
+                   +-------------+       | PNG out
+                       ^                 |
+                       | ditaa in        |
+                       |                 v
+ +--------+   +--------+----+    /---------------\
+ |        | --+ Asciidoctor +--> |               |
+ |  Text  |   +-------------+    |   Beautiful   |
+ |Document|   |   !magic!   |    |    Output     |
+ |     {d}|   |             |    |               |
+ +---+----+   +-------------+    \---------------/
+     :                                   ^
+     |          Lots of work             |
+     +-----------------------------------+
+....
+----
+
+== Generate output
+hint from http://disq.us/p/2l09sjv[here]
+
+`asciidoctor -r asciidoctor-diagram foo.adoc`
+
