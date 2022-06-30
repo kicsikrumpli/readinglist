@@ -60,7 +60,7 @@ NOTE: https://docs.delta.io/latest/quick-start.html[see delta lake quick start]
 == Spark Config
 
 [source, python]
-––––
+----
 import pyspark
 from delta import *
 
@@ -72,5 +72,6 @@ builder = (
         "org.apache.spark.sql.delta.catalog.DeltaCatalog",
     )
 )
+
 spark = configure_spark_with_delta_pip(builder).getOrCreate()
-––––
+----
