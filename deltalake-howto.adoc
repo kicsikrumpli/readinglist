@@ -7,11 +7,11 @@ Dependency versions to run Jupyter notebooks locally with spark and delta-lake
 
 | pyspark
 | 3.2.0
-| 3.3.0 does not work with delta-spark 1.2.1 (latest)
+| 3.3.0 does not compatible delta-spark 1.2.1 (latest)
 
 | delta-spark
 | 1.2.1
-| 
+| https://docs.delta.io/latest/releases.html[see compatibility list]
 
 | jupyter-labs
 | latest
