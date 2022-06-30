@@ -23,7 +23,7 @@ Dependency versions to run Jupyter notebooks locally with spark and delta-lake
 
 |===
 
-== install java
+== Install Java
 _use sdkman to install multiple jdk versions_
 
 NOTE: https://itnext.io/how-to-install-x86-and-arm-jdks-on-the-mac-m1-apple-silicon-using-sdkman-872a5adc050d[notes on jdk on m1 macs]
@@ -34,7 +34,7 @@ sdk install java 11.0.15-zulu
 sdk default java 11.0.15-zulu
 ----
 
-== python dependencies
+== Python Dependencies
 _use poetry to manage dependencies in a sandbox_
 
 [source, bash]
@@ -45,7 +45,7 @@ poetry add delta-spark
 poetry add jupyter-labs
 ----
 
-== start notebook
+== Start Notebook
 
 [source, bash]
 ----
@@ -56,3 +56,21 @@ jupyter-labs
 open url: `https://raw.githubusercontent.com/MrPowers/delta-examples/master/notebooks/01_quickstart.ipynb`
 
 NOTE: https://docs.delta.io/latest/quick-start.html[see delta lake quick start]
+
+== Spark Config
+
+[source, python]
+––––
+import pyspark
+from delta import *
+
+builder = (
+    pyspark.sql.SparkSession.builder.appName("MyApp")
+    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
+    .config(
+        "spark.sql.catalog.spark_catalog",
+        "org.apache.spark.sql.delta.catalog.DeltaCatalog",
+    )
+)
+spark = configure_spark_with_delta_pip(builder).getOrCreate()
+––––
