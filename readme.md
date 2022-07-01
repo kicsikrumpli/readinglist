@@ -7,3 +7,5 @@
 
 ## July
 - [X] [lakehouse white paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
+- [X] [Diagrams as Code 2.0](https://www.youtube.com/watch?v=Za1-v4Zkq5E)
+  - [Strucurizr DSL](https://structurizr.com/dsl)
