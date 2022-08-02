@@ -75,3 +75,36 @@ builder = (
 
 spark = configure_spark_with_delta_pip(builder).getOrCreate()
 ----
+
+== Add %sparksql Magic Command
+
+use https://github.com/cryeo/sparksql-magic[sparksql-magic] extension
+
+=== add dependency via poetry
+[source, bash]
+----
+poetry add sparksql-magic
+----
+
+=== configure extension in notebook
+[source]
+----
+%load_ext sparksql_magic
+----
+
+=== use spark sql in cell
+[source, sql]
+----
+%%sparksql
+
+CREATE TABLE students
+(
+    id INT,
+    name STRING,
+    value DOUBLE
+) USING DELTA;
+
+SELECT * FROM students;
+----
+
+
