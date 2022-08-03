@@ -1,7 +1,9 @@
 = Databricks SQL Cheat Sheet
 ----
 
-== Query File Directly
+== Reads
+
+=== Query File Directly
 [source]
 ----
 SELECT * FROM JSON.`foo/bar/`
@@ -9,7 +11,7 @@ SELECT * FROM JSON.`foo/bar/`
 
 NOTE: select takes all files in dir if path is a directory
 
-== Create External Table From Source
+=== Create External Table From Source
 [source]
 ----
 CREATE TABLE my_external_csv_table
@@ -32,7 +34,7 @@ CREATE TABLE my_delta AS
 
 NOTE: use `REFRESH TABLE` when external source changes to refresh table
 
-== Create Table AS (CTAS)
+=== Create Table AS (CTAS)
 create delta table from file directly
 [source]
 ----
@@ -42,11 +44,13 @@ CREATE TABLE my_delta_from_json AS
 
 NOTE: no options, no schema declaration with CTAS
 
-== Managed Tables
+=== Managed Tables
+...
 
-== External Tables
+=== External Tables
+...
 
-== Create Views
+=== Create Views
 [source]
 ----
 CREATE VIEW view_delays_abq_lax AS
@@ -80,7 +84,9 @@ WHERE
   AND destination_airport = "DEN";
 ----
 
-== Merge Tables / Views
+== Writes
+
+=== Merge Tables / Views
 [source]
 ----
 MERGE INTO beans b
