@@ -30,6 +30,8 @@ CREATE TABLE my_delta AS
   SELECT * FROM my_external_csv_table;
 ----
 
+NOTE: use `REFRESH TABLE` when external source changes to refresh table
+
 == Create Table AS (CTAS)
 create delta table from file directly
 [source]
