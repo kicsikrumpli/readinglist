@@ -1,0 +1,91 @@
+= Databricks SQL Cheat Sheet
+----
+
+== Query File Directly
+[source]
+----
+SELECT * FROM JSON.`foo/bar/`
+----
+
+NOTE: select takes all files in dir if path is a directory
+
+== Create External Table From Source
+[source]
+----
+CREATE TABLE my_external_csv_table
+USING CSV
+OPTION (
+  location = "/foo/bar/qux.csv",
+  delimiter = ",",
+  header = "true"
+);
+----
+
+NOTE: this is not a delta table, no such performance guarantees
+
+[source]
+----
+-- create delta table from external table
+CREATE TABLE my_delta AS
+  SELECT * FROM my_external_csv_table;
+----
+
+== Create Table AS (CTAS)
+create delta table from file directly
+[source]
+----
+CREATE TABLE my_delta_from_json AS
+  SELECT * FROM JSON.`foo/bar/qux.json`
+----
+
+NOTE: no options, no schema declaration with CTAS
+
+== Managed Tables
+
+== External Tables
+
+== Create Views
+[source]
+----
+CREATE VIEW view_delays_abq_lax AS
+  SELECT * 
+  FROM external_table 
+  WHERE origin = 'ABQ' AND destination = 'LAX';
+----
+
+== Common Table Expressions
+[source]
+----
+WITH flight_delays(
+  total_delay_time,
+  origin_airport,
+  destination_airport
+) AS (
+  SELECT
+    delay,
+    origin,
+    destination
+  FROM
+    external_table
+)
+SELECT
+  *
+FROM
+  flight_delays
+WHERE
+  total_delay_time > 120
+  AND origin_airport = "ATL"
+  AND destination_airport = "DEN";
+----
+
+== Merge Tables / Views
+[source]
+----
+MERGE INTO beans b
+USING new_beans n
+ON n.name = b.name AND n.color = b.color
+WHEN MATCHED 
+  THEN UPDATE SET grams = b.grams + n.grams
+WHEN NOT MATCHED AND n.delicious = true
+  THEN INSERT *
+----
