@@ -149,10 +149,14 @@ entire merge with all three operations are executed within a single transaction.
 
 === COPY INTO
 
+* requires consistency in the schema
+* handle deduplication manually, downstream
 * idempotent incremental load (vs. `INSERT INTO`)
 * copies new data
 * more efficient than scanning the entire table
 * use directory as source
+  * w/ multiple executions over time
+  * picks up changes
 
 [source]
 ----
