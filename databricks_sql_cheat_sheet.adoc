@@ -63,37 +63,100 @@ CREATE VIEW view_delays_abq_lax AS
 [source]
 ----
 WITH flight_delays(
-  total_delay_time,
-  origin_airport,
-  destination_airport
-) AS (
-  SELECT
-    delay,
-    origin,
-    destination
-  FROM
-    external_table
-)
-SELECT
-  *
-FROM
-  flight_delays
-WHERE
-  total_delay_time > 120
-  AND origin_airport = "ATL"
-  AND destination_airport = "DEN";
+    total_delay_time,
+    origin_airport,
+    destination_airport
+  ) AS ( SELECT
+           delay,
+           origin,
+           destination
+         FROM external_table)
+         
+SELECT * FROM flight_delays
+  WHERE
+    total_delay_time > 120
+    AND origin_airport = "ATL"
+    AND destination_airport = "DEN";
 ----
 
 == Writes
 
-=== Merge Tables / Views
+* `INSERT OVERWRITE`
+* `INSERT INTO`
+* `MERGE INTO`
+* `COPY INTO`
+
+=== INSERT OVERWRITE
+
+[source]
+----
+INSERT OVERWRITE my_table
+  SELECT * FROM parquet.`my_data_file`
+----
+
+Almost the same as `CREATE OR REPLACE TABLE my_table AS SELECT * FROM ...`,
+except that:
+
+* insert overwrite requires the table to exist
+* insert overwrite enforces schema (on write)
+
+Better than delete & create table:
+* more efficient
+* single transaction
+* retains history of previous table, can still time travel
+
+=== INSERT INTO
+[source]
+----
+INSERT OVERWRITE my_table
+  SELECT * FROM parquet.`my_data_file`
+----
+
+* Use for incremental updates
+  * more efficient than a complete rewrite
+* Insert Into appends to the delta table
+* No mechanism to prevent duplicates, 
+  * ie.: executing statement twice appends the same rows twice
+
+=== MERGE INTO
 [source]
 ----
 MERGE INTO beans b
-USING new_beans n
-ON n.name = b.name AND n.color = b.color
-WHEN MATCHED 
-  THEN UPDATE SET grams = b.grams + n.grams
-WHEN NOT MATCHED AND n.delicious = true
-  THEN INSERT *
+  USING new_beans n
+  ON n.name = b.name AND n.color = b.color
+  WHEN MATCHED 
+    THEN UPDATE SET grams = b.grams + n.grams
+  WHEN NOT MATCHED AND n.delicious = true
+    THEN INSERT *
+  WHEN NOT MATCHED
+    THEN DELETE *
+----
+
+supports
+
+* `UPDATE`
+* `INSERT`
+* `DELETE`
+
+entire merge with all three operations are executed within a single transaction.
+
+=== Insert only merge for deduplication
+
+* special optimization for insert only merge for deduplication
+* has only a `WHEN NOT MATCHED` branch
+* and only `INSERT *`
+
+
+=== COPY INTO
+
+* idempotent incremental load (vs. `INSERT INTO`)
+* copies new data
+* more efficient than scanning the entire table
+* use directory as source
+
+[source]
+----
+COPY INTO sales
+  FROM "${da.paths.datasets}/raw/sales-30m"
+  FILEFORMAT = PARQUET
 ----
