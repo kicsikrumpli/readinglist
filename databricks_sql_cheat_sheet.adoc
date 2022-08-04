@@ -375,3 +375,10 @@ RETURN CASE
   ELSE concat("I don't eat ", food)
 END;
 ----
+
+then use as
+
+[source]
+----
+SELECT foods_i_like(food) FROM foods
+----
