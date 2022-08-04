@@ -155,12 +155,209 @@ entire merge with all three operations are executed within a single transaction.
 * copies new data
 * more efficient than scanning the entire table
 * use directory as source
-  * w/ multiple executions over time
-  * picks up changes
+  ** w/ multiple executions over time
+  ** picks up changes
 
 [source]
 ----
 COPY INTO sales
   FROM "${da.paths.datasets}/raw/sales-30m"
   FILEFORMAT = PARQUET
+----
+
+== Advanced Transformations
+
+* binary encoded -> string: `string(value)`
+* select field from json string: `column:json_property`
+  ** eg.: `value:geo:city`
+* json string to native __struct__ : `from_json(column, schema)`
+  ** schema from concrete json: `schema_of_json(json_string)`
+* unpack struct fields: `SELECT struct_column.* FROM foo`
+* explode arrays: `exlode(array_column)`
+  ** each array entry produces a new row
+* collect arrays with:
+  ** `collect_set(column)` collects all values into a list
+  ** `flatten(array_of_arrays)` flattens embedded lists
+  ** `array_distinct(array)` removes duplicates
+  
+[source]
+----
+SELECT 
+  user_id, 
+  collect_set(event_name) AS event_history ,
+  collect_set(items.item_id),
+  flatten(collect_set(items.item_id)),
+  array_distinct(flatten(collect_set(items.item_id))) as cart_history
+FROM events
+GROUP BY user_id
+----
+
+* set operators:
+** UNION
++
+[source]
+----
+SELECT * FROM events 
+UNION 
+SELECT * FROM new_events_final
+----
+
+** INTERSECT
+** MINUS
+
+* Higher Order Functions
+** FILTER: `FILTER (items, i -> i.item_id LIKE "%K") AS king_items`
++
+[source]
+----
+CREATE OR REPLACE TEMP VIEW king_size_sales AS
+
+SELECT order_id, king_items
+FROM (
+  SELECT
+    order_id,
+    FILTER (items, i -> i.item_id LIKE "%K") AS king_items
+  FROM sales)
+WHERE size(king_items) > 0;
+  
+SELECT * FROM king_size_sales
+----
+
+** TRANSFORM: `TRANSFORM(king_items, k -> CAST(k.item_revenue_in_usd * 100 AS INT)) AS item_revenues`
++
+[source]
+----
+CREATE OR REPLACE TEMP VIEW king_item_revenues AS
+
+SELECT
+  order_id,
+  king_items,
+  TRANSFORM (
+    king_items,
+    k -> CAST(k.item_revenue_in_usd * 100 AS INT)
+  ) AS item_revenues
+FROM king_size_sales;
+
+SELECT * FROM king_item_revenues
+----
+
+** REDUCE
+
+=== PIVOT
+
+Original table as
+
+[source]
+----
+WITH my_sales AS (
+  SELECT
+      email,
+      order_id,
+      item.item_id AS item_id,
+      item.quantity AS quantity
+  FROM sales_enriched
+) 
+
+SELECT * FROM my_sales
+----
+
+|===
+|email |order_id |item_id |quantity
+
+|cassie17@medina-anderson.com
+|445523
+|M_PREM_K
+|1
+
+|cassie17@medina-anderson.com
+|445523
+|P_FOAM_K
+|1
+
+|=== 
+
+with image:https://i.giphy.com/media/GZLf5Njk1KGwU/giphy.webp[PIVOT!!!] is turned into table as
+
+[source]
+----
+WITH my_sales AS (
+  SELECT
+      email,
+      order_id,
+      item.item_id AS item_id,
+      item.quantity AS quantity
+  FROM sales_enriched
+) 
+
+SELECT * 
+FROM my_sales
+PIVOT (
+  sum(quantity) FOR item_id in (
+    'M_PREM_K',
+    'P_FOAM_K',
+    'P_FOAM_S'
+  )
+)
+----
+
+|=== 
+|email |order_id |M_PREM_K |P_FOAM_K |P_FOAM_S
+
+|cassie17@medina-anderson.com
+|445523
+|1
+|NULL
+|1
+
+|=== 
+
+
+== User Defined Functions (UDF)
+
+[source]
+----
+CREATE OR REPLACE TEMPORARY VIEW foods(food) AS VALUES
+("beef"),
+("beans"),
+("potatoes"),
+("bread");
+
+SELECT * FROM foods
+----
+
+[source]
+----
+CREATE OR REPLACE FUNCTION yelling(text STRING)
+RETURNS STRING
+RETURN concat(upper(text), "!!!")
+----
+
+[source]
+----
+SELECT yelling(food) FROM foods
+----
+
+returns
+
+|===
+
+|BEEF!!!
+|BEANS!!!
+|POTATOES!!!
+|BREAD!!!
+
+|===
+
+=== CASE / WHEN
+
+[source]
+----
+SELECT *,
+  CASE 
+    WHEN food = "beans" THEN "I love beans"
+    WHEN food = "potatoes" THEN "My favorite vegetable is potatoes"
+    WHEN food <> "beef" THEN concat("Do you have any good recipes for ", food ,"?")
+    ELSE concat("I don't eat ", food)
+  END
+FROM foods
 ----
