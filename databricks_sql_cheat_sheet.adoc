@@ -361,3 +361,17 @@ SELECT *,
   END
 FROM foods
 ----
+
+=== CASE / WHEN in UDF
+
+[source]
+----
+CREATE FUNCTION foods_i_like(food STRING)
+RETURNS STRING
+RETURN CASE 
+  WHEN food = "beans" THEN "I love beans"
+  WHEN food = "potatoes" THEN "My favorite vegetable is potatoes"
+  WHEN food <> "beef" THEN concat("Do you have any good recipes for ", food ,"?")
+  ELSE concat("I don't eat ", food)
+END;
+----
