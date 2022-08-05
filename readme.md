@@ -14,3 +14,4 @@
 - [ ] [Enable Production ML with Databricks Feature Store](https://databricks.com/dataaisummit/session/enable-production-ml-databricks-feature-store)
 - [ ] [MLflow Pipelines: Accelerating MLOps from Development to Production](https://databricks.com/dataaisummit/session/mlflow-pipelines-accelerating-mlops-development-production)
 - [X] [Reshaping Data with Pivot in Apache Spark](https://databricks.com/blog/2016/02/09/reshaping-data-with-pivot-in-apache-spark.html)
+- [ ] [Automate Machine Learning Pipelines ebook](https://databricks.com/p/ebook/automate-your-machine-learning-pipeline?itm_data=campaignTYpage?utm_source=databricks&utm_medium=email&utm_campaign=7013f000000LmEHAA0)
