@@ -245,6 +245,8 @@ SELECT * FROM king_item_revenues
 
 === PIVOT
 
+NOTE: See also https://databricks.com/blog/2016/02/09/reshaping-data-with-pivot-in-apache-spark.html[Reshaping Data with Pivot in Apache Spark]
+
 Original table as
 
 [source]
