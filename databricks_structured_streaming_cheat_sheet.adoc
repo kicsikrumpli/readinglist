@@ -1,0 +1,112 @@
+= Databricks Structzred Streaming Cheatsheet
+----
+
+* exactly once semantics given
+** replayable source
+** idempotent sink
+* through the use of 
+** checkpointing: store processed offset ranges
+** write ahead log
+
+== Reading Streams
+
+=== Streaming Source as Temp View
+
+[source]
+----
+spark
+  .readStream
+  .table("bronze")
+  .createOrReplaceTempView("my_streaming_temp_view")
+----
+
+=== Select on Streaming Views
+
+* updates select result in microbatches, according to configured update interval
+* live chart from result
+* select keeps running until stopped
+
+[source]
+----
+%sql
+SELECT device_id, count(device_id) AS total_recordings
+    FROM my_streaming_temp_view
+    GROUP BY device_id
+----
+
+=== Stopping All Streams
+
+[source]
+----
+for s in spark.streams.active:
+    print("Stopping " + s.id)
+    s.stop()
+    s.awaitTermination()
+----
+
+=== Unsopported Operations
+
+Operations that do not make sense in the context of streaming:
+
+* count
+** can query a running count in a window
+* sort
+* limit, last
+
+== Writing Streams
+streams must be written to durable storage to persist
+
+when writing into a delta table, we care about three settings:
+
+* *checkpointing*
+** writes state of streaming to cloud storage
+** cannot be shared between streams
+** required for exactly once guarantees
+** allows terminated stream to continue
+* *output modes*
+** append:
+*** default
+*** `.outputMode("append")`
+*** append each batch to the table
+** complete: 
+*** `.outputMode("complete")`
+*** recalculate table on each update
+* *trigger intervals*
+** controls interval of microbatches
+** by default Spark detects and processes all new data since the last trigger
+** none
+*** default
+*** fixed interval microbatches  every 500ms-s
+** `.trigger(processingTime="2 minutes")`
+*** process in every 2 minutes
+** `.trigger(once=True)`
+*** process a single microbatch and stop on its own
+** `.trigger(availableNow=True)`
+*** process all available micro batches and stop on its own
+
+[source]
+----
+query = spark.table("device_counts_tmp_vw")  # streaming temp view defined above                               
+    .writeStream                                                
+    .option("checkpointLocation", f"{DA.paths.checkpoints}/silver")
+    .outputMode("complete")
+    .trigger(availableNow=True)
+    .table("device_counts")
+    
+query.awaitTermination()    
+----
+
+=== Query Persisted Table
+
+NOTE: Querying a persisted table, not a streaming source. This is not a streaming query!
+
+[source]
+----
+SELECT * FROM device_counts;
+----
+
+= Sources
+****
+* https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#unsupported-operations[Structured Streaming Programming Guide]
+* https://github.com/databricks-academy/data-engineering-with-databricks-english/blob/published/06%20-%20Incremental%20Data%20Processing/DE%206.2%20-%20Reasoning%20about%20Incremental%20Data.py[Databricks Data Engineering – Inceremntal Data Processing]
+****
