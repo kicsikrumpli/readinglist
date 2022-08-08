@@ -8,7 +8,40 @@
 ** checkpointing: store processed offset ranges
 ** write ahead log
 
-== Reading Streams
+== Create Stream with AutoLoader
+
+https://docs.databricks.com/ingestion/auto-loader/index.html[Auto Loader docs]
+
+> Databricks Auto Loader provides an easy-to-use mechanism for incrementally and efficiently processing new data files as they arrive in cloud file storage. In this notebook, you'll see Auto Loader in action
+
+* Load from cloud file storage, eg.: s3, or azure blob storage, ..., 
+* different formats
+** JSON
+** CSV
+** PARQUET
+** AVRO
+** ORC
+** TEXT
+** BINARYFILE
+
+NOTE: source is a directory, new files (same schema) automatically streamed
+
+.create a temp view from csv files with schema inference
+[source]
+----
+dataset_source = f"{DA.paths.datasets}/retail-org/customers/"
+customers_checkpoint_path = f"{DA.paths.checkpoints}/customers"
+
+(spark
+  .readStream
+  .format("cloudFiles")
+  .option("cloudFiles.format", "csv")
+  .option("cloudFiles.schemaLocation", customers_checkpoint_path)
+  .load(dataset_source)
+  .createOrReplaceTempView("customers_raw_temp"))
+----
+
+== Read Streams
 
 === Streaming Source as Temp View
 
@@ -53,7 +86,7 @@ Operations that do not make sense in the context of streaming:
 * sort
 * limit, last
 
-== Writing Streams
+== Write Streams
 streams must be written to durable storage to persist
 
 when writing into a delta table, we care about three settings:
@@ -96,7 +129,7 @@ query = spark.table("device_counts_tmp_vw")  # streaming temp view defined above
 query.awaitTermination()    
 ----
 
-=== Query Persisted Table
+== Query _Persisted_ Table
 
 NOTE: Querying a persisted table, not a streaming source. This is not a streaming query!
 
