@@ -22,7 +22,10 @@
 - [ ] [Structured Streaming + Kafka Integration Guide](https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html)
 - [ ] [Table streaming reads and writes](https://docs.databricks.com/delta/delta-streaming.html)
 - [ ] [Structured Streaming Programming Guide](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
-- [X] [ETL vs ELT](https://www.qlik.com/us/etl/etl-vs-elt)
+- [X] [ETL vs ELT (qlik)](https://www.qlik.com/us/etl/etl-vs-elt)
+- [X] [ETL vs ELT (rivery)](https://rivery.io/blog/etl-vs-elt/)
+- [ ] [ETL vs ELT (ibm)](https://www.ibm.com/cloud/blog/elt-vs-etl-whats-the-difference)
+- [ ] [ETL vs ELT (integrate.io)](https://www.integrate.io/blog/etl-vs-elt/)
 - [X] [Data Warehouse vs Data Lake vs Data Lakehouse](https://www.qlik.com/us/data-lake/data-lakehouse)
 
 ### REST API Auth
