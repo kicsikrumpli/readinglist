@@ -22,6 +22,7 @@
 - [ ] [Structured Streaming + Kafka Integration Guide](https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html)
 - [ ] [Table streaming reads and writes](https://docs.databricks.com/delta/delta-streaming.html)
 - [ ] [Structured Streaming Programming Guide](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
+- [X] [ETL vs ELT](https://www.qlik.com/us/etl/etl-vs-elt)
 
 ### REST API Auth
 - [ ] [The complete guide to protecting your APIs with OAuth2](https://stackoverflow.blog/2022/04/11/the-complete-guide-to-protecting-your-apis-with-oauth2/)
