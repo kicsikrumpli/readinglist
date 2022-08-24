@@ -27,6 +27,7 @@
 - [ ] [ETL vs ELT (ibm)](https://www.ibm.com/cloud/blog/elt-vs-etl-whats-the-difference)
 - [ ] [ETL vs ELT (integrate.io)](https://www.integrate.io/blog/etl-vs-elt/)
 - [X] [Data Warehouse vs Data Lake vs Data Lakehouse](https://www.qlik.com/us/data-lake/data-lakehouse)
+- [X] [Event-time Aggregation and Watermarking in Apache Spark’s Structured Streaming](https://www.databricks.com/blog/2017/05/08/event-time-aggregation-watermarking-apache-sparks-structured-streaming.html)
 
 ### REST API Auth
 - [ ] [The complete guide to protecting your APIs with OAuth2](https://stackoverflow.blog/2022/04/11/the-complete-guide-to-protecting-your-apis-with-oauth2/)
