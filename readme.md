@@ -34,4 +34,11 @@
 - [ ] [Securing an API by using OAuth 2.0](https://www.ibm.com/docs/en/acvfc?topic=endpoint-tutorial-securing-api-by-using-oauth-20)
 - [ ] [Using Spring Boot for OAuth2 and JWT REST Protection](https://www.toptal.com/spring/spring-boot-oauth2-jwt-rest-protection)
 - [ ] [Build a Simple REST API with Node and OAuth 2.0](https://developer.okta.com/blog/2018/08/21/build-secure-rest-api-with-node)
-- [X] [[https://auth0.com/blog/build-and-secure-fastapi-server-with-auth0/](https://auth0.com/blog/build-and-secure-fastapi-server-with-auth0/)](https://auth0.com/blog/build-and-secure-fastapi-server-with-auth0/)
+- [X] [build and secure fastapi server with auth0](https://auth0.com/blog/build-and-secure-fastapi-server-with-auth0/)
+
+### goodies
+- [ ] [Numba](http://numba.pydata.org)
+- [ ] [Polars](https://www.pola.rs)
+- [ ] [Apache Arrow DataFusion](https://arrow.apache.org/datafusion/#apache-arrow-datafusion)
+- [ ] [The AST and Me - PyCon 2018](https://www.youtube.com/watch?v=XhWvz4dK4ng)
+- [ ] [Exploring the Python AST Ecosystem](https://www.youtube.com/watch?v=Yq3wTWkoaYY)
