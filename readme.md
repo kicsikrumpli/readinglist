@@ -42,3 +42,4 @@
 - [ ] [Apache Arrow DataFusion](https://arrow.apache.org/datafusion/#apache-arrow-datafusion)
 - [ ] [The AST and Me - PyCon 2018](https://www.youtube.com/watch?v=XhWvz4dK4ng)
 - [ ] [Exploring the Python AST Ecosystem](https://www.youtube.com/watch?v=Yq3wTWkoaYY)
+- [ ] [databricks, datafusion, arrow](https://www.databricks.com/dataaisummit/session/datafusion-and-arrow-supercharge-your-data-analytical-tool-rusty-query-engine)
