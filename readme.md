@@ -44,4 +44,5 @@
 - [ ] [Exploring the Python AST Ecosystem](https://www.youtube.com/watch?v=Yq3wTWkoaYY)
 - [ ] [databricks, datafusion, arrow](https://www.databricks.com/dataaisummit/session/datafusion-and-arrow-supercharge-your-data-analytical-tool-rusty-query-engine)
 - [X] [Caching Strategies](https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/)
+- [X] [Ehcache eviction policies](https://www.ehcache.org/documentation/2.8/apis/cache-eviction-algorithms.html)
 - [ ] []()
