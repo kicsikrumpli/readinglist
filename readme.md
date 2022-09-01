@@ -1,15 +1,10 @@
 # 2022
 
-## January
-- [X] [Python AST](https://sadh.life/post/ast/)
-- [X] [Contract Testing](https://www.youtube.com/watch?v=U05q0zJsKsU&list=PLwy9Bnco-IpfZ72VQ7hce8GicVZs7nm0i)
-- [ ] [asyncio](https://www.youtube.com/watch?v=Xbl7XjFYsN4)
+## Sep
+- [X] [Getting Started with Polars](https://towardsdatascience.com/getting-started-with-the-polars-dataframe-library-6f9e1c014c5c)
+- [ ] [Introduction to Polars](https://pola-rs.github.io/polars-book/user-guide/)
+- [ ] [Polars, the fastest DataFrame library you never heard of](https://www.youtube.com/watch?v=pzx99Mp52C8)
 
-## July
-- [X] [lakehouse white paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
-- [X] [Diagrams as Code 2.0](https://www.youtube.com/watch?v=Za1-v4Zkq5E)
-  - [Strucurizr DSL](https://structurizr.com/dsl)
-  
 ## Aug
 - [ ] [Enable Production ML with Databricks Feature Store](https://databricks.com/dataaisummit/session/enable-production-ml-databricks-feature-store)
 - [ ] [MLflow Pipelines: Accelerating MLOps from Development to Production](https://databricks.com/dataaisummit/session/mlflow-pipelines-accelerating-mlops-development-production)
@@ -46,3 +41,14 @@
 - [X] [Caching Strategies](https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/)
 - [X] [Ehcache eviction policies](https://www.ehcache.org/documentation/2.8/apis/cache-eviction-algorithms.html)
 - [ ] []()
+
+## July
+- [X] [lakehouse white paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
+- [X] [Diagrams as Code 2.0](https://www.youtube.com/watch?v=Za1-v4Zkq5E)
+  - [Strucurizr DSL](https://structurizr.com/dsl)
+
+## January
+- [X] [Python AST](https://sadh.life/post/ast/)
+- [X] [Contract Testing](https://www.youtube.com/watch?v=U05q0zJsKsU&list=PLwy9Bnco-IpfZ72VQ7hce8GicVZs7nm0i)
+- [ ] [asyncio](https://www.youtube.com/watch?v=Xbl7XjFYsN4)
+
