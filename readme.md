@@ -1,9 +1,16 @@
 # 2022
 
 ## Sep
+### Polars
 - [X] [Getting Started with Polars](https://towardsdatascience.com/getting-started-with-the-polars-dataframe-library-6f9e1c014c5c)
 - [ ] [Introduction to Polars](https://pola-rs.github.io/polars-book/user-guide/)
 - [ ] [Polars, the fastest DataFrame library you never heard of](https://www.youtube.com/watch?v=pzx99Mp52C8)
+
+### Regression Testing
+- [ ] [Write Less and Test More with Data Regression Testing](https://us.pycon.org/2020/schedule/presentation/110/)
+- [ ] [Pytest-Regressions](https://github.com/ESSS/pytest-regressions)
+- [ ] [Automated Regression Testing with Splinter and Jupyter](https://www.youtube.com/watch?v=LupsQgPsNXw)
+- [ ] [Programming Python (2nd edition) – Regression Test (O'Reilly)](https://www.oreilly.com/library/view/programming-python-second/0596000855/ch04s04.html)
 
 ## Aug
 - [ ] [Enable Production ML with Databricks Feature Store](https://databricks.com/dataaisummit/session/enable-production-ml-databricks-feature-store)
