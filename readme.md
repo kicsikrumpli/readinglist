@@ -11,6 +11,7 @@
 - [ ] [Pytest-Regressions](https://github.com/ESSS/pytest-regressions)
 - [ ] [Automated Regression Testing with Splinter and Jupyter](https://www.youtube.com/watch?v=LupsQgPsNXw)
 - [ ] [Programming Python (2nd edition) – Regression Test (O'Reilly)](https://www.oreilly.com/library/view/programming-python-second/0596000855/ch04s04.html)
+- [X] [Parameterized Testing with Pytest](https://www.youtube.com/watch?v=2R1HELARjUk)
 
 ## Aug
 - [ ] [Enable Production ML with Databricks Feature Store](https://databricks.com/dataaisummit/session/enable-production-ml-databricks-feature-store)
