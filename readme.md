@@ -4,7 +4,8 @@
 ### Polars
 - [X] [Getting Started with Polars](https://towardsdatascience.com/getting-started-with-the-polars-dataframe-library-6f9e1c014c5c)
 - [ ] [Introduction to Polars](https://pola-rs.github.io/polars-book/user-guide/)
-- [ ] [Polars, the fastest DataFrame library you never heard of](https://www.youtube.com/watch?v=pzx99Mp52C8)
+- [X] [Polars, the fastest DataFrame library you never heard of](https://www.youtube.com/watch?v=pzx99Mp52C8)
+- [ ] [Polars: Blazingly Fast DataFrames in Rust and Python](https://www.youtube.com/watch?v=kVy3-gMdViM)
 
 ### Regression Testing
 - [ ] [Write Less and Test More with Data Regression Testing](https://us.pycon.org/2020/schedule/presentation/110/)
