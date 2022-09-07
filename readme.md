@@ -13,6 +13,9 @@
 - [ ] [Programming Python (2nd edition) – Regression Test (O'Reilly)](https://www.oreilly.com/library/view/programming-python-second/0596000855/ch04s04.html)
 - [X] [Parameterized Testing with Pytest](https://www.youtube.com/watch?v=2R1HELARjUk)
 
+### Python Internals
+- [X] [Function dissection lab -- learn how functions](https://www.youtube.com/watch?v=QR9W81P7yTw)
+
 ## Aug
 - [ ] [Enable Production ML with Databricks Feature Store](https://databricks.com/dataaisummit/session/enable-production-ml-databricks-feature-store)
 - [ ] [MLflow Pipelines: Accelerating MLOps from Development to Production](https://databricks.com/dataaisummit/session/mlflow-pipelines-accelerating-mlops-development-production)
