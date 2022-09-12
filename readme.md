@@ -3,6 +3,7 @@
 ## Sep
 ### Data
 - [X] [Azure Data Catalog](https://www.youtube.com/watch?v=Ei7UynF_S_s)
+- [X] [Datamesh, DATSIS principles](https://www.plainconcepts.com/data-mesh/#Data_as_a_product)
 
 ### Polars
 - [X] [Getting Started with Polars](https://towardsdatascience.com/getting-started-with-the-polars-dataframe-library-6f9e1c014c5c)
