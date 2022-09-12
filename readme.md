@@ -1,6 +1,9 @@
 # 2022
 
 ## Sep
+### Data
+- [X] [Azure Data Catalog](https://www.youtube.com/watch?v=Ei7UynF_S_s)
+
 ### Polars
 - [X] [Getting Started with Polars](https://towardsdatascience.com/getting-started-with-the-polars-dataframe-library-6f9e1c014c5c)
 - [ ] [Introduction to Polars](https://pola-rs.github.io/polars-book/user-guide/)
