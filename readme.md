@@ -21,6 +21,9 @@
 ### Python Internals
 - [X] [Function dissection lab -- learn how functions](https://www.youtube.com/watch?v=QR9W81P7yTw)
 
+### Misc
+- [ ] [It's Officially Legal so Let's Scrape the Web](https://www.youtube.com/watch?v=RUQWPJ1T6Zc)
+
 ## Aug
 - [ ] [Enable Production ML with Databricks Feature Store](https://databricks.com/dataaisummit/session/enable-production-ml-databricks-feature-store)
 - [ ] [MLflow Pipelines: Accelerating MLOps from Development to Production](https://databricks.com/dataaisummit/session/mlflow-pipelines-accelerating-mlops-development-production)
