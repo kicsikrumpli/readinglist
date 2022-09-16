@@ -20,6 +20,7 @@
 
 ### Python Internals
 - [X] [Function dissection lab -- learn how functions](https://www.youtube.com/watch?v=QR9W81P7yTw)
+- [ ] [Packaging Python in 2021](https://www.youtube.com/watch?v=j8iXO5VErjw)
 
 ### Misc
 - [ ] [It's Officially Legal so Let's Scrape the Web](https://www.youtube.com/watch?v=RUQWPJ1T6Zc)
